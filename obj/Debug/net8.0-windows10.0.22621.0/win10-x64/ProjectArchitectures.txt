@@ -1,1 +1,0 @@
-C:\RepGitDavide\SharePointToolkit\SharePointToolkit.csproj;x64
