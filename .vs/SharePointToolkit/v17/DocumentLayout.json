@@ -1,12 +1,88 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\RepGitDavide\\SharePointToolkit\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{C19DC248-ADC4-4715-A8D9-7FEB58D47FC2}|SharePointToolkit.csproj|c:\\repgitdavide\\sharepointtoolkit\\mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C19DC248-ADC4-4715-A8D9-7FEB58D47FC2}|SharePointToolkit.csproj|solutionrelative:mainpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C19DC248-ADC4-4715-A8D9-7FEB58D47FC2}|SharePointToolkit.csproj|c:\\repgitdavide\\sharepointtoolkit\\csom\\csomutility.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C19DC248-ADC4-4715-A8D9-7FEB58D47FC2}|SharePointToolkit.csproj|solutionrelative:csom\\csomutility.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C19DC248-ADC4-4715-A8D9-7FEB58D47FC2}|SharePointToolkit.csproj|c:\\repgitdavide\\sharepointtoolkit\\csom\\csomcconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C19DC248-ADC4-4715-A8D9-7FEB58D47FC2}|SharePointToolkit.csproj|solutionrelative:csom\\csomcconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C19DC248-ADC4-4715-A8D9-7FEB58D47FC2}|SharePointToolkit.csproj|c:\\repgitdavide\\sharepointtoolkit\\mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{C19DC248-ADC4-4715-A8D9-7FEB58D47FC2}|SharePointToolkit.csproj|solutionrelative:mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "MainPage.xaml",
+              "DocumentMoniker": "C:\\RepGitDavide\\SharePointToolkit\\MainPage.xaml",
+              "RelativeDocumentMoniker": "MainPage.xaml",
+              "ToolTip": "C:\\RepGitDavide\\SharePointToolkit\\MainPage.xaml",
+              "RelativeToolTip": "MainPage.xaml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-03-03T14:16:28.452Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "CSOMCConfig.cs",
+              "DocumentMoniker": "C:\\RepGitDavide\\SharePointToolkit\\CSOM\\CSOMCConfig.cs",
+              "RelativeDocumentMoniker": "CSOM\\CSOMCConfig.cs",
+              "ToolTip": "C:\\RepGitDavide\\SharePointToolkit\\CSOM\\CSOMCConfig.cs",
+              "RelativeToolTip": "CSOM\\CSOMCConfig.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAsAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-03T14:09:59.282Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CSOMUtility.cs",
+              "DocumentMoniker": "C:\\RepGitDavide\\SharePointToolkit\\CSOM\\CSOMUtility.cs",
+              "RelativeDocumentMoniker": "CSOM\\CSOMUtility.cs",
+              "ToolTip": "C:\\RepGitDavide\\SharePointToolkit\\CSOM\\CSOMUtility.cs",
+              "RelativeToolTip": "CSOM\\CSOMUtility.cs",
+              "ViewState": "AQIAACMAAAAAAAAAAAAhwCwAAAAQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-03T12:35:33.171Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MainPage.xaml.cs",
+              "DocumentMoniker": "C:\\RepGitDavide\\SharePointToolkit\\MainPage.xaml.cs",
+              "RelativeDocumentMoniker": "MainPage.xaml.cs",
+              "ToolTip": "C:\\RepGitDavide\\SharePointToolkit\\MainPage.xaml.cs*",
+              "RelativeToolTip": "MainPage.xaml.cs*",
+              "ViewState": "AQIAAAUAAAAAAAAAAAAawCAAAAAnAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-03T14:16:59.749Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
     }
   ]
 }

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SharePointToolkit")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+c5f1f0bd83c1e38e61066ef7b974e336b5aff57e")]
 [assembly: System.Reflection.AssemblyProductAttribute("SharePointToolkit")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SharePointToolkit")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -62,17 +62,29 @@
             },
             "Microsoft.Maui.Controls": {
               "target": "Package",
-              "version": "[8.0.6, )"
+              "version": "[8.0.7, )"
             },
             "Microsoft.Maui.Controls.Compatibility": {
               "target": "Package",
-              "version": "[8.0.6, )"
+              "version": "[8.0.7, )"
             },
             "Microsoft.NET.ILLink.Tasks": {
               "suppressParent": "All",
               "target": "Package",
               "version": "[8.0.2, )",
               "autoReferenced": true
+            },
+            "Microsoft.SharePoint.Client": {
+              "target": "Package",
+              "version": "[14.0.4762.1000, )"
+            },
+            "Microsoft.SharePointOnline.CSOM": {
+              "target": "Package",
+              "version": "[16.1.24614.12000, )"
+            },
+            "PnP.Framework": {
+              "target": "Package",
+              "version": "[1.15.0, )"
             }
           },
           "imports": [
@@ -106,11 +118,23 @@
             },
             "Microsoft.Maui.Controls": {
               "target": "Package",
-              "version": "[8.0.6, )"
+              "version": "[8.0.7, )"
             },
             "Microsoft.Maui.Controls.Compatibility": {
               "target": "Package",
-              "version": "[8.0.6, )"
+              "version": "[8.0.7, )"
+            },
+            "Microsoft.SharePoint.Client": {
+              "target": "Package",
+              "version": "[14.0.4762.1000, )"
+            },
+            "Microsoft.SharePointOnline.CSOM": {
+              "target": "Package",
+              "version": "[16.1.24614.12000, )"
+            },
+            "PnP.Framework": {
+              "target": "Package",
+              "version": "[1.15.0, )"
             }
           },
           "imports": [
