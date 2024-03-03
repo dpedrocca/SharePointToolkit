@@ -1,0 +1,90 @@
+https://2h8d1h.sharepoint.com/sites/DevSite1/SitePages/ProjectHome.aspx?market=en-US
+
+https://graph.microsoft.com/v1.0/sites/2h8d1h.sharepoint.com,8e14302d-3aec-4180-bdee-341009aca215,2ab9d5ab-92b9-49f5-b506-053c4e7d5593/permissions
+
+https://graph.microsoft.com/v1.0/sites/2h8d1h.sharepoint.com,8e14302d-3aec-4180-bdee-341009aca215,2ab9d5ab-92b9-49f5-b506-053c4e7d5593/permissions GET
+
+https://graph.microsoft.com/v1.0/sites/2h8d1h.sharepoint.com:/sites/devsite1
+https://graph.microsoft.com/v1.0/sites/2h8d1h.sharepoint.com,8e14302d-3aec-4180-bdee-341009aca215,2ab9d5ab-92b9-49f5-b506-053c4e7d5593/lists
+
+Request Body
+
+{
+	"roles": [
+		"read",
+		"write"
+	],
+	"grantedToIdentities": [
+		{
+			"application": {
+				"id": "f79ac065-abc1-4afc-8ff5-2bae75711396",
+				"displayName": "TestRegistration"
+			}
+		}
+	]
+}
+
+-------------------------------------------------
+
+{
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#sites('2h8d1h.sharepoint.com%2C8e14302d-3aec-4180-bdee-341009aca215%2C2ab9d5ab-92b9-49f5-b506-053c4e7d5593')/permissions",
+    "@microsoft.graph.tips": "Use $select to choose only the properties your app needs, as this can lead to performance improvements. For example: GET sites('<key>')/permissions?$select=expirationDateTime,grantedTo",
+    "value": [
+        {
+            "id": "aTowaS50fG1zLnNwLmV4dHxmNzlhYzA2NS1hYmMxLTRhZmMtOGZmNS0yYmFlNzU3MTEzOTZAM2Y4ZGJmMzUtZmU4ZS00YjVkLTlhNzYtMTlkMzI1MDZiNzI5",
+            "grantedToIdentitiesV2": [
+                {
+                    "application": {
+                        "displayName": "TestSharepoint1",
+                        "id": "f79ac065-abc1-4afc-8ff5-2bae75711396"
+                    }
+                }
+            ],
+            "grantedToIdentities": [
+                {
+                    "application": {
+                        "displayName": "TestSharepoint1",
+                        "id": "f79ac065-abc1-4afc-8ff5-2bae75711396"
+                    }
+                }
+            ]
+        }
+    ]
+}
+
+-------------------------------------------------
+
+
+{
+    "value": [
+        {
+            "searchTerms": [
+                "contoso"
+            ],
+            "hitsContainers": [
+                {
+                    "hits": [
+                        {
+                            "hitId": "2h8d1h.sharepoint.com,8e14302d-3aec-4180-bdee-341009aca215,2ab9d5ab-92b9-49f5-b506-053c4e7d5593",
+                            "rank": 1,
+                            "summary": "Dev Site 1",
+                            "resource": {
+                                "@odata.type": "#microsoft.graph.site",
+                                "displayName": "Dev Site 1",
+                                "id": "2h8d1h.sharepoint.com,8e14302d-3aec-4180-bdee-341009aca215,2ab9d5ab-92b9-49f5-b506-053c4e7d5593",
+                                "createdDateTime": "2024-01-10T17:00:37Z",
+                                "description": "Dev Site 1",
+                                "lastModifiedDateTime": "2024-01-10T17:00:53Z",
+                                "name": "DevSite1",
+                                "webUrl": "https://2h8d1h.sharepoint.com/sites/DevSite1"
+                            }
+                        }
+                    ],
+                    "total": 1,
+                    "moreResultsAvailable": false
+                }
+            ]
+        }
+    ],
+    "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#Collection(microsoft.graph.searchResponse)"
+}

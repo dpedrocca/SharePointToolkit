@@ -1,0 +1,35 @@
+Register-PnPAzureADApp -ApplicationName SPSitesSelected -Tenant 2h8d1h.onmicrosoft.com -Store CurrentUser -SharePointApplicationPermissions "Sites.Selected" -Username "leon@dev365.leonarmston.com" -Password (Read-Host -AsSecureString -Prompt "Enter Password")
+
+
+
+Grant-PnPAzureADAppSitePermission -AppId 'f79ac065-abc1-4afc-8ff5-2bae75711396' -DisplayName 'TestSharepoint1' -Site 'https://2h8d1h.sharepoint.com/sites/sitesselected' -Permissions Write
+
+
+2h8d1h.sharepoint.com
+
+https://2h8d1h.sharepoint.com/sites/DevSite1/SitePages/ProjectHome.aspx?market=en-US
+
+
+
+Connect-PnPOnline -Url "2h8d1h.sharepoint.com" -ClientId f79ac065-abc1-4afc-8ff5-2bae75711396 -ClientSecret lr08Q~fr03eGCILexY-JXyotONaWv0U4zUnyVc4l
+
+Import-Module PnP.PowerShell
+Connect-PnPOnline -Url "2h8d1h.sharepoint.com" -DeviceLogin -LaunchBrowser
+
+Grant-PnPAzureADAppSitePermission -AppId 'f79ac065-abc1-4afc-8ff5-2bae75711396' -DisplayName 'SharePoint1' -Site 'https://2h8d1h.sharepoint.com/sites/DevSite1' -Permissions Write
+
+Grant-PnPAzureADAppSitePermission -AppId 'f79ac065-abc1-4afc-8ff5-2bae75711396' -DisplayName 'SharePoint1' -Site 'https://2h8d1h.sharepoint.com/sites/DevSite1' -Permissions FullControl
+
+Get-PnPAzureADAppSitePermission -Site https://2h8d1h.sharepoint.com/sites/DevSite1
+
+Get-PnPAzureADAppSitePermission -AppIdentity "TestSharepoint1"
+
+ID: aTowaS50fG1zLnNwLmV4dHxmNzlhYzA2NS1hYmMxLTRhZmMtOGZmNS0yYmFlNzU3MTEzOTZAM2Y4ZGJmMzUtZmU4ZS00YjVkLTlhNzYtMTlkMzI1MDZiNzI5
+	aTowaS50fG1zLnNwLmV4dHxmNzlhYzA2NS1hYmMxLTRhZmMtOGZmNS0yYmFlNzU3MTEzOTZAM2Y4ZGJmMzUtZmU4ZS00YjVkLTlhNzYtMTlkMzI1MDZiNzI5
+        
+
+Connect-PnPOnline -Url "2h8d1h.sharepoint.com" -ClientId f79ac065-abc1-4afc-8ff5-2bae75711396 -ClientSecret lr08Q~fr03eGCILexY-JXyotONaWv0U4zUnyVc4l
+
+Get-PnPList
+
+https://2h8d1h.sharepoint.com/sites/DevSite1/_layouts/15/appinv.aspx

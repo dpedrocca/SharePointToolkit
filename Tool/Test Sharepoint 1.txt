@@ -1,0 +1,17 @@
+App ID
+f79ac065-abc1-4afc-8ff5-2bae75711396
+
+Tenant ID
+3f8dbf35-fe8e-4b5d-9a76-19d32506b729
+
+Secret
+lr08Q~fr03eGCILexY-JXyotONaWv0U4zUnyVc4l
+
+---------------------------------------------------------------------
+
+f79ac065-abc1-4afc-8ff5-2bae75711396@3f8dbf35-fe8e-4b5d-9a76-19d32506b729
+
+f79ac065-abc1-4afc-8ff5-2bae75711396@2h8d1h.onmicrosoft.com
+
+
+029F0FC625E78E2B753888D20D15EA5488695CC5

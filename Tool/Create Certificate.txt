@@ -1,0 +1,1 @@
+.\CreateSelfCert.ps1 -CommonName "SharepointADTest" -StartDate 2024-01-01 -EndDate 2029-01-01
