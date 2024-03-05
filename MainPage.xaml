@@ -1,27 +1,21 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+<Shell  xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="SharePointToolkit.MainPage">
+             x:Class="SharePointToolkit.MainPage"
+             xmlns:local="clr-namespace:SharePointToolkit;assembly=SharePointToolkit"
+             xmlns:views="clr-namespace:SharePointToolkit"
+             Title="SharePoint Toolkit">
 
-    <ScrollView>
-        <VerticalStackLayout
-            Padding="30,0"
-            Spacing="25">
-            <Button
-                x:Name="TestAll"
-                Text="Test ALL" 
-                SemanticProperties.Hint=""
-                Clicked="OnCounterClicked"
-                HorizontalOptions="Fill" />
-
-            <Button
-                x:Name="TestConnect"
-                Text="Test Connection" 
-                SemanticProperties.Hint=""
-                Clicked="TestConnection"
-                HorizontalOptions="Fill" />
-            
-        </VerticalStackLayout>
-    </ScrollView>
-
-</ContentPage>
+    <TabBar>
+        <Tab Title="Tests">
+            <ShellContent ContentTemplate="{DataTemplate views:TestConnection}" />
+        </Tab>
+        <Tab Title="Documents">
+            <ShellContent Title="Doc1" ContentTemplate="{DataTemplate views:Documents}" />
+            <ShellContent Title="Doc2" ContentTemplate="{DataTemplate views:Documents}" />
+        </Tab>
+        <Tab Title="Security">
+            <ShellContent ContentTemplate="{DataTemplate views:TestConnection}" />
+        </Tab>
+    </TabBar>
+</Shell>

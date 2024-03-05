@@ -4,6 +4,14 @@
     <ActiveDebugFramework>net8.0-windows10.0.22621.0</ActiveDebugFramework>
   </PropertyGroup>
   <ItemGroup>
+    <MauiXaml Update="Documents.xaml">
+      <SubType>Designer</SubType>
+    </MauiXaml>
+    <MauiXaml Update="TestConnection.xaml">
+      <SubType>Designer</SubType>
+    </MauiXaml>
+  </ItemGroup>
+  <ItemGroup>
     <None Update="App.xaml">
       <SubType>Designer</SubType>
     </None>

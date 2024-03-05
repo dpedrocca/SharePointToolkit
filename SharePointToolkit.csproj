@@ -68,4 +68,13 @@
 		<PackageReference Include="PnP.Framework" Version="1.15.0" />
 	</ItemGroup>
 
+	<ItemGroup>
+	  <MauiXaml Update="Documents.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="TestConnection.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	</ItemGroup>
+
 </Project>
