@@ -72,6 +72,9 @@
 	  <MauiXaml Update="Documents.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
+	  <MauiXaml Update="DocumentsList.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	  <MauiXaml Update="TestConnection.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>

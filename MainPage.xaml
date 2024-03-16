@@ -11,7 +11,7 @@
             <ShellContent ContentTemplate="{DataTemplate views:TestConnection}" />
         </Tab>
         <Tab Title="Documents">
-            <ShellContent Title="Doc1" ContentTemplate="{DataTemplate views:Documents}" />
+            <ShellContent Title="Show Documents List" ContentTemplate="{DataTemplate views:DocumentsList}" />
             <ShellContent Title="Doc2" ContentTemplate="{DataTemplate views:Documents}" />
         </Tab>
         <Tab Title="Security">

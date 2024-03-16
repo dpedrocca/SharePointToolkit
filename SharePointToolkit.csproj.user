@@ -7,6 +7,9 @@
     <MauiXaml Update="Documents.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>
+    <MauiXaml Update="DocumentsList.xaml">
+      <SubType>Designer</SubType>
+    </MauiXaml>
     <MauiXaml Update="TestConnection.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>

@@ -94,6 +94,96 @@ namespace SharePointToolkit.CSOM
             }
 
         }
+        public async Task GetDocuments(CSOMCConfig cfg, string folder = "", CancellationToken cancellationToke = default)
+        {
+            var siteRelativeUri = cfg.Site;
+
+            var spoTenant = cfg.SPOTenantName;
+
+            // Connect to the target SPO site via CSOM
+            using (var clientContext = await AuthenticationManager.CreateWithCertificate(
+                cfg.ClientId,
+                System.Security.Cryptography.X509Certificates.StoreName.My,
+                System.Security.Cryptography.X509Certificates.StoreLocation.CurrentUser,
+                cfg.CertificateThumbprint,
+                cfg.TenantId)
+                .GetContextAsync($"https://{spoTenant}{siteRelativeUri}"))
+            {
+                // Let's see if the current user is site admin
+                var currentUser = clientContext.Web.CurrentUser;
+                clientContext.Load(currentUser, u => u.IsSiteAdmin);
+                await clientContext.ExecuteQueryAsync();
+
+                Site site = clientContext.Site;
+                Web web = clientContext.Web;
+                List list = web.Lists.GetByTitle("Documents");
+                clientContext.Load(list);
+                clientContext.ExecuteQuery();
+
+                //tutti i file escluse le folder, ricorsivo
+                //non sembra funzionare
+                //<Where><Eq><FieldRef Name='FSObjType' /><Value Type='Integer'>0</Value></Eq></Where><QueryOptions><ViewAttributes Scope='RecursiveAll' /></QueryOptions>
+
+                //simple query: contiene file e folders
+                //<View><RowLimit>1000</RowLimit></View>
+
+                //<View Scope=\"RecursiveAll\"></View>"
+
+                //<Query><Where><Eq><FieldRef Name='Title'/><Value Type='Text'>F4</Value></Eq></Where></Query>
+
+                //filter by folder OK !!!
+                //camlQuery.ViewXml = "<View Scope='FilesOnly' />";
+                //camlQuery.FolderServerRelativeUrl = "/sites/DevSite1/Shared%20Documents/F4";
+
+                folder = "F4";
+
+                CamlQuery camlQuery = new CamlQuery();
+                if (string.IsNullOrEmpty(folder))
+                {
+                    camlQuery.ViewXml = "<View Scope=\"RecursiveAll\"></View>\"";
+                }
+                else
+                {
+                    //non funziona
+                    //camlQuery.ViewXml = "<View Scope='RecursiveAll'><Query><Where><Eq><FieldRef Name='FileDirRef'/><Value Type='Text'>/F4/</Value></Eq></Where></Query></View>";
+                    //camlQuery.ViewXml = "<View Scope=\"RecursiveAll\"></View>";
+
+                    camlQuery.ViewXml = "<View Scope='RecursiveAll' />";
+                    camlQuery.FolderServerRelativeUrl = "/sites/DevSite1/Shared%20Documents/F4";
+                }
+
+                ListItemCollection collListItem = list.GetItems(camlQuery);
+
+                clientContext.Load(collListItem,
+                         items => items.Include(
+                            item => item.Id,
+                            item => item.DisplayName,
+                            item => item.HasUniqueRoleAssignments,
+                            items => items.FileSystemObjectType,
+                            items => items.ContentType
+                            ));
+
+                clientContext.ExecuteQuery();
+
+                foreach (ListItem oListItem in collListItem)
+                {
+                    if (oListItem.FileSystemObjectType == FileSystemObjectType.File)
+                    {
+                        // This is a File
+                    }
+                    else if (oListItem.FileSystemObjectType == FileSystemObjectType.Folder)
+                    {
+                        // This is a  Folder
+                    }
+
+                    System.Diagnostics.Trace.WriteLine(string.Format("ID: {0} \nDisplay name: {1} \nUnique role assignments: {2}",
+                        oListItem.Id, oListItem.DisplayName, oListItem.HasUniqueRoleAssignments));
+                }
+
+                
+            }
+
+        }
         public async Task TestConnection(CSOMCConfig cfg, CancellationToken cancellationToke = default)
         {
             var siteRelativeUri = cfg.Site;
